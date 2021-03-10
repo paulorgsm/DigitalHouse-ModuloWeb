@@ -49,6 +49,9 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '/src/views/index.html'));
 })
 
+//app.use(express.static(path.join(__dirname, '/src/styles/')));
+
+
 app.listen(3000, () => {
     console.log('Servidor rodando na porta 3000');
 });
