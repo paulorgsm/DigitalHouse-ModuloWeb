@@ -22,7 +22,7 @@
         
             <main>
                 <div id="pesquisa">
-                    <input type="text" placeholder="Digite Seu Pokémon">
+                    <input class="styled-input" type="text" placeholder="Digite Seu Pokémon">
                 </div>
 
                 <div class="lista">
@@ -41,7 +41,21 @@
                             <img src="https://img.pokemondb.net/artwork/gengar.jpg" alt="Pokemon Gengar" width="200px">
                         </div>
                 </div>
+                <form class="form" method="POST" action="/enviar-mensagem">
+                    <h2>Entre Em Contato</h2>
+                    
+                    <label for="nome">Nome:</label>
+                    <input class="styled-input" type="text" name="nome" id="nome"  placeholder="Digite o nome aqui">
 
+                    <label for="nome">Email:</label>
+                    <input class="styled-input" type="email" name="email" id="email" placeholder="Digite o email aqui">
+                    
+                    <label for="comentario">Comentário:</label>
+                    <textarea class="styled-input" name="comentario" id="comentario" maxlength="280" rows="6" placeholder="Digite sua mensagem"></textarea>
+
+                    <button type="submit"> Enviar Mensagem</button>
+
+                </form>
 
             </main>
 
